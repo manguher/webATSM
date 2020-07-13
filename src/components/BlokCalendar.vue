@@ -1,5 +1,5 @@
 <template>
-  <div class="col-md-4">
+  <div class="col-md-2 card-event-content">
     <div class="card body-calendar-detalle" style="width: 18rem;">
       <div class="card-block">
         <img :src="blok.imagenUT.filename" class="card-img-top" alt />
