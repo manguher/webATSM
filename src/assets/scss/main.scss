@@ -1,0 +1,15 @@
+@import '~bootstrap/dist/css/bootstrap.css';
+@import 'header/skeleton';
+@import 'header/skin';
+@import 'calendar/calendardetalle';
+
+body {
+    color:#bf4aa8;
+    background-color: #51d0de;
+    
+}
+
+html *
+{
+    font-family: "futura-pt-bold", 'Futura PT', Futura, sans-serif !important;
+}
