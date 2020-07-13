@@ -2,7 +2,7 @@
   <div class="content body-calendar">
     <div class="container">
       <div class="row justify-content-md-center" >
-        <h1 class="title-calendar">Calendatio Asamble Territorial San Miguel</h1>
+        <h1 class="title-calendar">Calendario de Actividades Semanal Asamble Territorial San Miguel</h1>
       </div>
       <div class="row">
         <template v-for="(item) in story.content.body">
