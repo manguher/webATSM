@@ -2,7 +2,7 @@
   <div class="content body-calendar">
     <div class="container-fluid">
       <div class="row justify-content-md-center logo">
-          <img src="../assets/logo.png" class="img-fluid" alt="Responsive image" width="150" height="150">        
+          <img src="../assets/logo.png" class="img-fluid logo-asamblea" alt="Responsive image" width="150" height="150">        
       </div>
       <div class="row justify-content-md-center">
         <h1 class="title-calendar"><strong>Calendario de Actividades Semanal Asamblea Territorial San Miguel</strong></h1>
