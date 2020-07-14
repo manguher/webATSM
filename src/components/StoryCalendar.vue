@@ -5,7 +5,7 @@
           <img src="../assets/logo.png" class="img-fluid" alt="Responsive image" width="150" height="150">        
       </div>
       <div class="row justify-content-md-center">
-        <h1 class="title-calendar">Calendario de Actividades Semanal Asamble Territorial San Miguel</h1>
+        <h1 class="title-calendar"><strong>Calendario de Actividades Semanal Asamblea Territorial San Miguel</strong></h1>
       </div>
       <div class="row justify-content-md-center">
         <template v-for="(item) in story.content.body">
