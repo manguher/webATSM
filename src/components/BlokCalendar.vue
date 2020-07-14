@@ -25,6 +25,7 @@
   </div>
 </template>
 <script>
+import moment from 'moment';
 import CoolLightBox from "vue-cool-lightbox";
 import "vue-cool-lightbox/dist/vue-cool-lightbox.min.css";
 
@@ -59,7 +60,7 @@ export default {
         "Noviembre",
         "Diciembre"
       ],
-       items: [],
+      items: [],
       index: null
     };
   },
@@ -67,20 +68,29 @@ export default {
     this.dia = this.getDia();
     this.hora = this.getHora();
     this.mes = this.getMes();
-    this.items.push(this.blok.imagenUT.filename)
+    this.items.push(this.blok.imagenUT.filename);
   },
   methods: {
     getHora() {
-      let date = new Date(this.blok.DatetimeUT);
-      return date.getHours() + ":" + date.getMinutes();
+      if (this.blok.DatetimeUT !== "") {
+        let date = new Date(this.blok.DatetimeUT);
+        return date.getHours() + ":" + date.getMinutes();
+      } 
+      else return "-";
     },
     getMes() {
-      let date = new Date(this.blok.DatetimeUT);
-      return this.meses[date.getMonth()];
+      if (this.blok.DatetimeUT !== "") {
+        let date = new Date(this.blok.DatetimeUT);
+        return this.meses[date.getMonth()];
+      } 
+      else return "-";
     },
     getDia() {
-      let date = new Date(this.blok.DatetimeUT);
-      return date.getDay();
+      if (this.blok.DatetimeUT !== "") {
+        let check = moment(this.blok.DatetimeUT, 'YYYY/MM/DD');
+        return check.format('D');
+      }
+      else return "-";
     }
   }
 };
