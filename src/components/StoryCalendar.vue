@@ -22,18 +22,18 @@
             <thead>
               <tr>
                 <th scope="col">Evento</th>
-                <th scope="col">UT</th>
+                <th scope="col">Unidad Territorial</th>
                 <th scope="col">Fecha</th>
                 <th scope="col">Hora</th>
               </tr>
             </thead>
             <tbody>
               <tr v-for="(item, indexblok) in story.content.body" :key="item.id">
-                <th scope="row">
+                <th scope="row" class="table-event-title">
                   <i class="far fa-find" style="font-size:18px"></i>
                   <a @click="index = indexblok">{{item.Title}}</a>
                 </th>
-                <td></td>
+                <td>{{item.numeroUT}}</td>
                 <td>{{getFecha(item.DatetimeUT)}}</td>
                 <td>{{getHora(item.DatetimeUT)}}</td>
               </tr>
