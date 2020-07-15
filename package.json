@@ -1,5 +1,5 @@
 {
-  "name": "webut5",
+  "name": "Calendario_WEB_BATSM",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -34,3 +34,6 @@
     "vue-template-compiler": "^2.6.11"
   }
 }
+
+
+

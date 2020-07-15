@@ -1,7 +1,7 @@
 <template>
-  <div class="col-md-2 card-event-content">
+  <div class="col-md-3 card-event-content">
     <CoolLightBox :items="items" :index="index" @close="index = null"></CoolLightBox>
-    <div class="card body-calendar-detalle" style="width: 18rem;">
+    <div class="card body-calendar-detalle">
       <div class="card-block">
         <img :src="blok.imagenUT.filename" @click="index = 0" class="card-img-top" alt />
         <div class="card-body">
@@ -26,9 +26,6 @@
 </template>
 <script>
 import moment from 'moment';
-import CoolLightBox from "vue-cool-lightbox";
-import "vue-cool-lightbox/dist/vue-cool-lightbox.min.css";
-
 export default {
   name: "BlokCalendar",
   props: {
@@ -36,9 +33,6 @@ export default {
       type: Object,
       required: true
     }
-  },
-  components: {
-    CoolLightBox
   },
   data() {
     return {
